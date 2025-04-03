@@ -13,26 +13,26 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-    main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
-    game.h
-    game.cpp
-    card.h
-    card.cpp
-    mainstack.h
-    mainstack.cpp
-    shufflequeue.h
-    shufflequeue.cpp
-    nonrepeatingrandomgen.h
-    nonrepeatingrandomgen.cpp
-    foundationpile.h
-    foundationpile.cpp
-    animator.h
-    animator.cpp
-    shufflequeuehard.h
-    shufflequeuehard.cpp
+    src/main.cpp
+    src/mainwindow.cpp
+    src/mainwindow.h
+    src/mainwindow.ui
+    src/game.h
+    src/game.cpp
+    src/card.h
+    src/card.cpp
+    src/mainstack.h
+    src/mainstack.cpp
+    src/shufflequeue.h
+    src/shufflequeue.cpp
+    src/nonrepeatingrandomgen.h
+    src/nonrepeatingrandomgen.cpp
+    src/foundationpile.h
+    src/foundationpile.cpp
+    src/animator.h
+    src/animator.cpp
+    src/shufflequeuehard.h
+    src/shufflequeuehard.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
