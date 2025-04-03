@@ -18,12 +18,12 @@ Game::Game(QWidget *parent)
     mainStacks[i] = new MainStack(parent, this, i + 1,
                                   QPoint(offsetX + (i * 130), offsetY));
   }
-  shuffleQueue = new ShuffleQueueHard(parent, this, 20, QPoint(30, 30));
+  shuffleQueue = new ShuffleQueue(parent, this, 20, QPoint(30, 30));
 
   foundationPiles = new FoundationPile *[foundationPilesSize];
   for (int i = 0; i < foundationPilesSize; ++i) {
-    foundationPiles[i] =
-        new FoundationPile(parent, this, QPoint(1150, 30 + (i * 170)), static_cast<Suit>(i));
+    foundationPiles[i] = new FoundationPile(
+        parent, this, QPoint(1150, 30 + (i * 170)), static_cast<Suit>(i));
   }
 }
 
