@@ -23,7 +23,7 @@ Game::Game(QWidget *parent)
   foundationPiles = new FoundationPile *[foundationPilesSize];
   for (int i = 0; i < foundationPilesSize; ++i) {
     foundationPiles[i] =
-        new FoundationPile(parent, this, QPoint(1150, 30 + (i * 170)), i);
+        new FoundationPile(parent, this, QPoint(1150, 30 + (i * 170)), static_cast<Suit>(i));
   }
 }
 

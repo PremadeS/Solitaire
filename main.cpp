@@ -20,8 +20,6 @@ int main(int argc, char *argv[]) {
 
   Game game(&window);
 
-  window.setStyleSheet("background-color: green;");
-
   window.show();
 
   return a.exec();
